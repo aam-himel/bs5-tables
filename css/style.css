@@ -434,6 +434,43 @@ p {
 
 /*-------------- Keyword Grid Page ---------------*/
 
+.tabs_btn {
+    display: inline-block;
+    padding: 0px 16px;
+    height: 40px !important;
+    height: 40px;
+    background: #1D2430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CBCFD5;
+}
+
+.tabs_btn:hover {
+    color: #CBCFD5;
+    background: #1d2430e7;
+}
+
+.tabs_active {
+    background: #F8F9FA !important;
+    color: #1D2430;
+}
+
+.tabs_active:hover {
+    color: #1D2430;
+}
+
+
+.rounded_righttop {
+    border-top-right-radius: 4px;
+}
+
+.rounded_lefttop {
+    border-top-left-radius: 4px;
+}
 
 .filter_search {
     width: 171px;
@@ -465,6 +502,10 @@ p {
     background-color: white;
 }
 
+.dot_menu:hover {
+    cursor: pointer;
+}
+
 .btn_addmenu button {
     font-size: 12px !important;
     height: 32px;
@@ -474,18 +515,12 @@ p {
     color: white;
 }
 
-/* 
-.keyword_grid_tables thead tr th {
-    font-weight: 600;
-    font-size: 12px !important;
-    line-height: 15px;
-    color: #000000;
-    background-color: red;
-
-} */
-
 #gridTable tbody td {
     font-size: 12px !important;
+}
+
+#gridTable select:hover {
+    cursor: pointer;
 }
 
 .w_col_no {
@@ -513,6 +548,13 @@ p {
     min-width: 110px !important;
 }
 
+.w_week,
+.w_month,
+.w_day,
+.w_date {
+    min-width: 89px;
+}
+
 .w_pxheight {
     min-width: 120px;
 }
@@ -531,4 +573,30 @@ p {
 
 .row_count .form-select {
     font-size: 12px !important;
+}
+
+.page_no {
+    text-align: center;
+    width: 48px;
+    height: 32px !important;
+    padding: 4px 8px;
+    background: #FFFFFF;
+    border: 1px solid rgba(18, 35, 40, 0.5) !important;
+    border-radius: 4px;
+}
+
+.btn_next,
+.btn_prev {
+    padding: 12px 12px;
+    width: 58px;
+    height: 32px;
+
+    border-radius: 4px;
+}
+
+
+.btn_next:hover,
+.btn_prev:hover {
+    cursor: pointer;
+    background: rgb(232, 232, 232);
 }
